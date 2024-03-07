@@ -1,0 +1,348 @@
+/* Sections */
+#Section1{
+    top: 0vh;
+    height: 100vh;
+    width: 100vw;
+    position: static;
+    overflow: hidden;
+}
+#Section2{
+    top: 0vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: #e3e3e3;
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    z-index: 4;
+}
+#Section3{
+    top: 0vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    z-index: 4;
+}
+
+/* Section 1 Title Page */
+#wavebox{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+
+}
+#header_div{
+    top: 0%;
+    left: 40%;
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    z-index: 1;
+}
+#tyler{
+    color: #cc83c0;
+}
+#header {
+    position: absolute;
+    top: 15%;
+    left: 15.5%;
+    line-height: 85%;
+    color: #FAA098;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    font-size: 16vh;
+    opacity: 0;
+    animation: slideRight ease-in-out 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;  
+}
+#sub {
+    position: absolute;
+    top: 42%;
+    left: 16%;
+    color: #FAA098;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.4vh;
+    font-weight: 540;
+    line-height: 130%;
+    opacity: 0;
+    animation: slideRight ease-in-out 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;  
+
+}
+@keyframes slideRight {
+
+    0%  {left: -15%;
+        opacity: 0;}
+    100% {
+        left: 20.5%;
+        opacity: 1;
+    }
+} 
+#wave{
+    padding: 0;
+    display: block;
+    margin: 0;
+    height: auto;
+    width: 120%;
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    
+}
+#wavebox{
+    z-index: 2;
+}
+#profile{
+    padding: 0;
+    display: block;
+    margin: 0;
+    position: absolute;
+    width: auto;
+    height: 100%;
+}
+
+/* Section 2 About Me */
+
+#aboutBGdiv{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    top: 0%;
+}
+
+#aboutBG{
+    width: 160%;
+    height: 120%;
+    bottom: -50%;
+    left: -25%;
+    position: absolute;
+}
+#aboutmeIMG{
+    background-color: #c9c9c9;
+    position: absolute;
+    height: 75%;
+    width: 25%;
+    top: 10%;
+    left: 15%;
+    border-radius: 3vh;
+    display: flex;
+    overflow: hidden;
+}
+#aboutmeTXT{
+    /* background-color: #c9c9c9; */
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    height: 65%;
+    width: 35%;
+    box-sizing: border-box;
+    padding-left: 3%;
+    padding-top: 0%;
+}
+#AMimg{
+    height: 100%;
+    width: auto;
+}
+#AMbut{
+    position: absolute;
+    height: 2vh;
+    width: auto;
+    border-style: solid;
+    border-radius: 20vh;
+    top: 85%;
+    border-color: #cf86c3;
+    border-width: 0.5vh;
+    background-color: #cf86c3;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    transition: all 0.3s ease;
+}
+.btnTxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    font-size: 1.5vw;  
+    color: #FFFFFF;
+}
+.btnLink:hover .btnTxt{
+    color: #c074b3;
+}
+.btnLink:hover #AMbut{
+    background-color: transparent;
+    border-color: #c074b3;
+}
+
+#aboutmeHeader {
+    position: absolute;
+    line-height: 85%;
+    color: #c074b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    font-size: 10vh;
+}
+#aboutmeBody {
+    position: absolute;
+    color: #cc85c0;
+    /* color: #FAA098; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 250;
+    font-size: 2.75vh;
+    top: 17%;
+    line-height: 150%;
+}
+
+/* Section 3 Engineering/Design */
+#DirBG{
+    padding: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    z-index: 7;
+}
+#DirBGbox {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: 11;
+    overflow-x: visible;
+}
+#EngBox{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    background-color: transparent;
+}
+#DesBox{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 10;
+    overflow: visible;
+}
+#EngBox:hover #EngIconBW{opacity: 0;
+    transform: scale(1.57,1.57) translateX(5vw);} 
+#EngBox:hover #EngIconColor{
+    opacity: 1;
+    transform: scale(1.57,1.57) translateX(5vw);}
+#EngBox:hover #EngGlow{opacity: 1;}
+#DesBox:hover #DesIconBW{opacity: 0;
+    transform: scale(2.35,2.35) translateX(-6vw);} 
+#DesBox:hover #DesIconColor{
+    opacity: 1;
+    transform: scale(2.35,2.35) translateX(-6vw);}
+#DesBox:hover #DesGlow{opacity: 1;}
+#EngBox:hover #EngDir{
+    opacity: 1;
+    transform: translateX(125vh);}
+#DesBox:hover #DesDir{
+    opacity: 1;
+    transform: translateX(-75vh);}
+#EngIconBW{
+    padding: 0;
+    opacity: 1;
+    position: absolute;
+    height: 70%;
+    width: auto;
+    top: 15%;
+    left: -5%;
+    z-index: 5;
+    transition: all 1s ease;
+}
+#EngIconColor{
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    height: 70%;
+    width: auto;
+    top: 15%;
+    left: -5%;
+    z-index: 5;
+    transition: all 1s ease;
+}
+#EngGlow{
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 4;
+    transition: all 1s ease;
+}
+#DesIconBW{
+    padding: 0;
+    opacity: 1;
+    position: absolute;
+    top: 5%;
+    right: -3%;
+    z-index: 5;
+    height: 90%;
+    width: auto;
+    transition: all 1s ease;
+}
+#DesGlow{
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 4;
+    transition: all 1s ease;
+}
+#DesIconColor{
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    right: -3%;
+    z-index: 5;
+    height: 90%;
+    transition: all 1s ease;
+}
+#EngDir{
+    color: #E8913A;
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    z-index: 10;
+    transition: all 1s ease;
+
+}
+#DesDir{
+    color: #BC68AA;
+    position: absolute;
+    bottom: 50%;
+    left: 60%;
+    z-index: 10;
+    transition: all 1s ease;
+
+}
+.DirText{
+    line-height: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65pt;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    width: 50vw;
+}
+

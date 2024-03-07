@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="RKD/RKD.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tyler Harp's Webpage</title>
+    </head>
+    <body id="page">
+        <!-- Navigation Bar -->
+        <div w3-include-html="../header_for_portfolio.html"></div>
+        <!-- Section 1 -->
+            <div id="mainGraphicDiv">
+                <img id="mainGraphic" src="RKD/RKDMain.jpg">
+            </div>
+            <div id="titleDiv">
+                <div id="topHeaderUnderline"></div>
+                <div id="botHeaderUnderline"></div>
+                <text id="title" class="textFormat">
+                    Jenga-Stacking Robot Arm
+                </text>
+                <text id="subtitle" class="textFormat">
+                    Programming a robot arm to stack Jenga blocks
+                </text>
+                <text id="date" class="textFormat">
+                    Robot Kinematics and Dynamics Capstone, September - December 2023
+                </text>
+            </div>
+        </div>
+        <div id="Section2">
+            <div id="secondGraphicDiv">
+                <video controls id="secondGraphic" src="RKD/RKD_final.MOV"></video>            
+            </div>
+            <div id="secondTextDiv">
+                <text class="headlineText" class="textFormat">
+                    About the Project:
+                </text>
+                <text class="bodyText" class="textFormat">
+                    This project was coded for a class called Robot Kinematics and Dynamics, where the aim of the project was to stack a 
+                    certain amount of Jenga block layers within a time frame and the physical bounds of a tight box. Using inverse kinematics, 
+                    we calculated the joint positions based on the desired end effector pose and commanded the robot to move to this position. 
+                    Additionally, with inverse kinematic trajectory planning, we were able tos make straight-line movements in the world 
+                    coordinate space with intermediate waypoints to achieve the final movement pattern. Below is a full demonstration of the 
+                    final state of the project.  
+                </text>
+            </div>
+        </div>
+        <div id="Section3">
+            <div id="thirdGraphicDiv">
+                <img id="thirdGraphic" src="RKD/Devan_hart.JPG">
+            </div>
+            <div id="thirdTextDiv">
+                <text class="headlineText" class="textFormat">
+                    The Project Theory
+                </text>
+                <text class="bodyText" class="textFormat">
+                    Below are some pictures of the subsystems of the boat. On the top right are the two motors which 
+                    operated the boat as a skid steer. These were controlled by ESCs, operated by an Arduino with 
+                    an IMU and a magnetometer to detect pose. On the bottom right was our sensor package, which 
+                    included an Arduino wired to various water data sensors like salinity, turbidity, temperature, 
+                    and pH. Lastly, on the bottom left, you can see the reel and chute system for deploying the 
+                    sensor package and some of the internal electronics, like the batteries for powering all subsystems. 
+                </text>
+            </div>
+        </div>
+        <div w3-include-html="../footer_for_portfolio.html"></div>
+        
+        <script src="../rellax.min.js"></script>
+        <script src="../include.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax');
+            includeHTML();
+        </script>
+    </body>
+</html>

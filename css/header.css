@@ -1,0 +1,102 @@
+/* header */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* :root {
+    --footerLinkHeight: 3vh;
+} */
+#page::-webkit-scrollbar {
+    display: none;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: 0;
+}
+pre{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #FFFFFF;
+    margin: 0em;
+}
+div{
+    display:flex
+}
+
+/* nav bar */
+#navbar{
+    position: fixed;
+    top: 2%;
+    left: 6%;
+    z-index: 101;
+}
+#navback{
+    position: fixed;
+    height: 8.5vh;
+    width: 100vw;
+    top: 0%;
+    left: 0%;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.topbar {
+    display: inline;
+    float:left;
+}
+.navbut{
+    display: block;
+    color: #E8913A;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25vh;
+}
+.underline-animated {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.underline-animated:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.underline-animated:hover:after {
+	width: 100%;
+	background: #FAA098;
+}
+#logoBox{
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    height: 5vh;
+    width: 5vw;
+    z-index: 101;
+    transition: all .5s ease;
+}
+#logoBox:hover #logo{
+    transform: scale(1.20,1.20);
+}
+#logo{
+    padding: 0;
+    display: block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease;
+
+}
