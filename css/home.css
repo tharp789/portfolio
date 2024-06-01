@@ -243,10 +243,10 @@
     transform: scale(1.57,1.57) translateX(5vw);}
 #EngBox:hover #EngGlow{opacity: 1;}
 #DesBox:hover #DesIconBW{opacity: 0;
-    transform: scale(2.35,2.35) translateX(-6vw);} 
+    transform: scale(1.40,1.40) translateX(-6vw);} 
 #DesBox:hover #DesIconColor{
     opacity: 1;
-    transform: scale(2.35,2.35) translateX(-6vw);}
+    transform: scale(1.40,1.40) translateX(-6vw);}
 #DesBox:hover #DesGlow{opacity: 1;}
 #EngBox:hover #EngDir{
     opacity: 1;
@@ -292,7 +292,7 @@
     opacity: 1;
     position: absolute;
     top: 5%;
-    right: -3%;
+    right: -20%;
     z-index: 5;
     height: 90%;
     width: auto;
@@ -303,7 +303,7 @@
     opacity: 0;
     position: absolute;
     top: 5%;
-    right: -3%;
+    right: -20%;
     z-index: 5;
     height: 90%;
     transition: all 1s ease;
