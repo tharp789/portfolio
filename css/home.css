@@ -103,7 +103,9 @@
     margin: 0;
     position: absolute;
     width: auto;
-    height: 100%;
+    height: 105%;
+    bottom: -10%;
+    left: 15%;
 }
 
 /* Section 2 About Me */
