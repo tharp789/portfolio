@@ -12,12 +12,12 @@ export default function ProjectDetail({
   accentColor = '#E8913A'
 }) {
   return (
-    <div className="pt-24">
+    <div>
       {/* Back Navigation */}
-      <div className="bg-[#0f0f23] px-8 py-4">
+      <div className="bg-white px-12 py-4 pt-28">
         <Link 
           to={backLink}
-          className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors"
+          className="inline-flex items-center gap-2 text-gray-500 hover:text-gray-800 transition-colors"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -27,21 +27,21 @@ export default function ProjectDetail({
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] bg-[#0f0f23] overflow-hidden">
+      <section className="relative min-h-[60vh] bg-white overflow-hidden">
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
             alt={title}
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f23] via-[#0f0f23]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent" />
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-8 py-24 flex flex-col justify-end min-h-[70vh]">
+        <div className="relative z-10 w-full px-12 py-16 flex flex-col justify-end min-h-[60vh]">
           <motion.h1 
-            className="text-5xl lg:text-7xl font-extrabold mb-4"
+            className="text-6xl lg:text-8xl font-extrabold mb-4"
             style={{ color: accentColor }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,15 +51,15 @@ export default function ProjectDetail({
           </motion.h1>
           
           <motion.div 
-            className="w-24 h-1 mb-6"
+            className="w-32 h-1.5 mb-6"
             style={{ backgroundColor: accentColor }}
             initial={{ width: 0 }}
-            animate={{ width: 96 }}
+            animate={{ width: 128 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           />
 
           <motion.p 
-            className="text-white/80 text-2xl mb-2"
+            className="text-gray-700 text-2xl lg:text-3xl mb-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -68,7 +68,7 @@ export default function ProjectDetail({
           </motion.p>
 
           <motion.p 
-            className="text-white/50 text-lg"
+            className="text-gray-500 text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -82,10 +82,10 @@ export default function ProjectDetail({
       {sections.map((section, index) => (
         <section 
           key={index}
-          className={`py-24 ${index % 2 === 0 ? 'bg-[#1a1a2e]' : 'bg-[#0f0f23]'}`}
+          className={`py-20 ${index % 2 === 0 ? 'bg-[#e3e3e3]' : 'bg-white'}`}
         >
-          <div className="max-w-6xl mx-auto px-8">
-            <div className={`flex flex-col ${section.imagePosition === 'right' ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
+          <div className="w-full px-12">
+            <div className={`flex flex-col ${section.imagePosition === 'right' ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-16`}>
               {/* Text */}
               <motion.div 
                 className="lg:w-1/2"
@@ -95,12 +95,12 @@ export default function ProjectDetail({
                 transition={{ duration: 0.8 }}
               >
                 <h2 
-                  className="text-3xl lg:text-4xl font-bold mb-6"
+                  className="text-4xl lg:text-5xl font-bold mb-8"
                   style={{ color: accentColor }}
                 >
                   {section.title}
                 </h2>
-                <p className="text-white/70 text-lg leading-relaxed">
+                <p className="text-gray-600 text-xl lg:text-2xl leading-relaxed">
                   {section.content}
                 </p>
               </motion.div>
@@ -136,4 +136,3 @@ export default function ProjectDetail({
     </div>
   );
 }
-
