@@ -1,80 +1,16 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/home.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tyler Harp's Portfolio</title>
-        <link rel="icon" href="favicon.ico">
-    </head>
-    <body id="page">
-        <div id="Section1">
-            <div w3-include-html="header.html"></div>
-            <div id = "wavebox" class="rellax" data-rellax-speed="-5">
-                <img id = "wave" src="images/waveWrap.png" >
-                <img id = "profile" src="images/full_body_profile_blank_background.png" >
-            </div>
-            <div id="header_div" class= "rellax" data-rellax-speed="-7">
-                <h1 id="header">
-                Hello,<br>I'm <span id="tyler">Tyler</span>
-                </h1>
-                <text id = "sub">
-                    Robotics, Engineering,<br>and Design
-                </text> 
-            </div>
-        </div>
-        <div id="Section2">
-            <div id="aboutBGdiv">
-                <img id="aboutBG" src="images/DirectoryBG.png">
-            </div>
-            <div id="aboutmeIMG">
-                <img id="AMimg" src="images/aboutme.png">
-            </div>
-            <div id="aboutmeTXT">
-                <h1 id="aboutmeHeader">
-                    About Me
-                </h1>
-                <text id = "aboutmeBody">
-                    My name is Tyler Harp and I am currently pursuing a Masters in Mechanical Engineer with a concentration in Robotic and Control Systems from Carnegie Mellon.
-                    My undergrad was also at Carnegie Mellon where I studied many topics like Engineering, Mechatronics, Robotics, and Design. Through my unique and multi-disciplinary
-                    background, I hope to enter industry to help create complex and ground breaking robotic systems that seek to enable humans, rather than replace them.
-                </text>
-                <a class="btnLink" href="about.html">
-                    <div id="AMbut" class="borderbtn">
-                        <text class="btnTxt"> Find out more about me! </text>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div id="Section3">
-            <a href="Engineering.html">
-                <div id = "EngBox">
-                    <h1 id="EngDir" class="DirText">
-                        Engineering
-                    </h1>
-                    <img id = "EngIconBW" src="images/engIconBW.png">
-                    <img id = "EngIconColor" src="images/engIcon.png">
-                    <img id = "EngGlow" src="images/engIconGlow.png">
-                </div>
-            </a>
-            <a href="Design.html">
-                <div id="DesBox">
-                    <h1 id="DesDir" class="DirText">
-                        Design
-                    </h1>
-                    <img id = "DesIconBW" src="images/designIconBW.png">
-                    <img id = "DesIconColor" src="images/designIcon.png">
-                    <img id = "DesGlow" src="images/designGlow.png">
-                </div>
-            </a>
-        </div>
-        <div w3-include-html="footer.html"></div>
-        
-        <script src="rellax.min.js"></script>
-        <script src="include.js"></script>
-        <script>
-            var rellax = new Rellax('.rellax');
-            includeHTML();
-        </script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler Harp's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
